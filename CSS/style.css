@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#map {
+    height: 80vh;
+    width: 100%;
+    z-index: 1;
+}
+
+main {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+#img {
+    width: 40%;
+    background-color: #FFBEBE;
+    padding: 2rem;
+    border-radius: 15px;
+
+}
+
+.pstyle {
+    font-size: 3rem;
+    padding: 2rem;
+    font-family: 'Knewave';
+}
+
+.description {
+    color: white;
+    font-family: 'Knewave';
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+
+/* Effet d'inversion des couleurs quand on passe la souris sur les boutons Carte/Favoris */
+
+.part3 :hover {
+    color: #E72E2E80;
+}
+
+/* Changement du style du curseur quand on passe la souris sur les boutons Carte/Favoris */
+
+
+.posbtn {
+    position: absolute;
+    bottom: 0;
+    left: calc(-1px)
+}
+
+
+.photo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.titre {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#close {
+    font-size: 2.5rem;
+    border-radius: 10px;
+    border: none;
+    color: #A94A4A;
+    padding: 1rem;
+    font-family: 'Knewave';
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 1rem;
+}
+
+#save {
+    font-size: 2.5rem;
+    border-radius: 10px;
+    border: none;
+    color: #A94A4A;
+    padding: 1rem;
+    font-family: 'Knewave';
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Changement de style du pointeur quand on passe la souris sur la "croix" */
+
+#mark {
+    color: #FFF6F6BF;
+    cursor: pointer;
+}
+
+/* Ajout d'une ligne de séparation entre les deux boutons Carte/Favoris */
+.ligne {
+    border-left: thin solid #00000047;
+}
+
+.part2 {
+    position: absolute;
+    z-index: 2;
+    background-color: #F27373;
+    display: none;
+    justify-content: space-around;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 30vh;
+    width: 100%;
+    opacity: 0.9;
+}
+
+
+
+.partglobal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height: 80vh;
+    width: 100%;
+}
+
+#result {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Knewave';
+    background-color: #F27373;
+    height: 80%;
+    overflow: auto;
+    width: 100%;
+    position: absolute;
+}
+
+.part3 {
+    display: flex;
+    justify-content: space-around;
+    height: 20%;
+    width: 100%;
+}
+
+
+.btnmap {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    color: #E72E2E;
+    align-items: center;
+    cursor: pointer;
+    border-top: thin solid #00000047;
+    height: 100%;
+}
+
+.btnfav {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    color: #E72E2E;
+    align-items: center;
+    cursor: pointer;
+    border-top: thin solid #00000047;
+    height: 100%;
+
+}
+
+.test {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.divpos {
+    border-bottom: thick solid #00000047;
+}
+
+
+
+/*Responsive Part jusqu'à 320px*/
+
+@media (max-width: 1000px) {
+
+    /*On passe en colonne la popUp pour les écrans allant jusqu'à 1000px*/
+
+    .part2 {
+        width: 100vw;
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    /*On réduit la taille de la photo*/
+    #img {
+        width: 40%;
+    }
+
+    /*On enlève l'écriture des boutons pour garder uniquement les logos visible*/
+    .pstyle {
+        display: none;
+        width: 100vw;
+    }
+}
+
+/*On change la disposition des éléments en colonne*/
+
+@media (max-width : 500px) {
+    .test {
+        flex-direction: column-reverse
+    }
+
+    #close {
+        margin: 1rem;
+    }
+
+}
+
+/*On réduit la taille de la police*/
+
+@media (max-width : 400px) {
+    #result {
+        font-size: 1.5rem;
+    }
+}

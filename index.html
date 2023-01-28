@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <title>Projet Crous</title>
+    <link rel="icon" href="/Images/istockphoto-1141797008-612x612.jpg">
+</head>
+
+<body>
+    <main>
+        <div class="partglobal">
+            <div id="map"></div>
+            <!--Injecte dans la div 'part2' la 'popup' contenant la description/photos/bouton add des resaurants-->
+            <div class="part2"></div>
+        </div>
+        <!--Partie boutons carte/favoris-->
+        <div class="part3">
+            <div class="btnmap" onclick="window.location.href='/index.html'">
+                <i class="fas fa-map-marked-alt fa-3x"></i>
+                <p class="pstyle">Carte</p>
+            </div>
+            <div class="ligne"></div>
+            <div class="btnfav" onclick="window.location.href='/HTML/favoris.html'">
+                <i class="fas fa-heart fa-3x"></i>
+                <p class="pstyle">Favoris</p>
+            </div>
+        </div>
+        </div>
+    </main>
+    <script src="/Javascript/main.js"></script>
+</body>
+
+</html>
