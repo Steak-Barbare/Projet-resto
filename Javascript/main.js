@@ -42,7 +42,7 @@ function restAdd(data) {
 
     addRest.innerHTML = `
         <div class="photo">
-            <img src="/Images/camera-solid.svg" alt="" id="img">
+            <img src="./Images/camera-solid.svg" alt="" id="img">
         </div>
         <div class="titre">       
             <p class="description">${data.title}</p>
